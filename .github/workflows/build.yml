@@ -31,7 +31,8 @@ jobs:
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Build Project
       run: |
-        python ${{ github.workspace }}/SampleCICD/Prime/Build/prime.py
+        echo ${{ github.workspace }}
+        python ${{ github.workspace }}/Prime/Build/prime.py
     - name: Test with pytest
       run: |
         python ${{ github.workspace }}/SampleCICD/Prime/UnitTests/unittest_prime.py
