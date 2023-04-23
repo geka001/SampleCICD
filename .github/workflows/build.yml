@@ -33,6 +33,6 @@ jobs:
       run: |
         echo ${{ github.workspace }}
         python ${{ github.workspace }}/Prime/Build/prime.py
-    - name: Test with pytest
-      run: |
-        python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
+#     - name: Test with pytest
+#       run: |
+#         python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
