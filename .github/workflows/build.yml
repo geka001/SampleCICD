@@ -35,4 +35,4 @@ jobs:
         python ${{ github.workspace }}/Prime/Build/prime.py
     - name: Test with pytest
       run: |
-        python ${{ github.workspace }}/SampleCICD/Prime/UnitTests/unittest_prime.py
+        python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
