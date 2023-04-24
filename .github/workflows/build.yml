@@ -4,10 +4,8 @@
 name: build
 
 on:
-  push:
-    branches: [ "main" ]
-#   pull_request:
-#     branches: [ "main" ]
+  pull_request:
+    branches: [ "feature-100" ]
   workflow_dispatch:
 
 permissions:
