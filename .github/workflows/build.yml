@@ -37,7 +37,7 @@ jobs:
       with:
           token: ${{ secrets.REPO_GHA_PAT }}
           repository: ${{ github.repository }}
-          event-type: test
+          event-type: feature-test
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
 #     - name: Test with pytest
 #       run: |
