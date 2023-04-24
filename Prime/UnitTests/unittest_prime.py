@@ -6,4 +6,5 @@
 #         	self.assertTrue(is_prime(5))
 #         	self.assertFalse(is_prime(9))
 #         	self.assertTrue(is_prime(11))
+print("Build Success")
 print("Test Success")
