@@ -8,3 +8,4 @@
 #         	self.assertTrue(is_prime(11))
 print("Build Success")
 print("Test Success")
+print("Report Success")
