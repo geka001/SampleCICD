@@ -4,8 +4,8 @@
 name: main-build
 
 on:
-#   push:
-#     branches: [ "main" ]
+  push:
+    branches: [ "main" ]
 #   pull_request:
 #     branches: [ "main" ]
   workflow_dispatch:
@@ -33,14 +33,14 @@ jobs:
       run: |
         echo ${{ github.workspace }}
         python ${{ github.workspace }}/Prime/Build/prime.py
-    - name: Trigger next workflow
-      if: success()
-      uses: peter-evans/repository-dispatch@v1
-      with:
-          token: ${{ secrets.REPO_GHA_PAT }}
-          repository: ${{ github.repository }}
-          event-type: test
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
-#     - name: Test with pytest
-#       run: |
-#         python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
+#     - name: Trigger next workflow
+#       if: success()
+#       uses: peter-evans/repository-dispatch@v1
+#       with:
+#           token: ${{ secrets.REPO_GHA_PAT }}
+#           repository: ${{ github.repository }}
+#           event-type: test
+#           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+    - name: Test with pytest
+      run: |
+        python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
