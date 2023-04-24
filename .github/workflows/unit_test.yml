@@ -10,7 +10,7 @@ on:
 #     branches: [ "main" ]
   workflow_dispatch:
   repository_dispatch:
-    types: [test]
+    types: [feature-test]
 
 permissions:
   contents: read
