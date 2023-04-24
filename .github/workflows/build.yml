@@ -1,8 +1,8 @@
 name: feature-build
 
 on:
-  push:
-    branches: [ "feature-100" ]
+#   push:
+#     branches: [ "feature-100" ]
   workflow_dispatch:
 
 permissions:
