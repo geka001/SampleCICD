@@ -39,6 +39,6 @@ jobs:
           repository: ${{ github.repository }}
           event-type: feature-test
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
-#     - name: Test with pytest
-#       run: |
-#         python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
+    - name: Unit Tests with pytest
+      run: |
+        python ${{ github.workspace }}/Prime/UnitTests/unittest_prime.py
